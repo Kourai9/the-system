@@ -1,5 +1,6 @@
 import { useState } from "react";
 import HomePage from "./components/HomePage";
+import Stats from "./components/stats";
 import "./App.css";
 
 function App() {
