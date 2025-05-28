@@ -1,31 +1,40 @@
 import UserStats from "./UserStats";
+import DailyTask from "./DailyTask";
 function HomePage() {
   return (
-    <div className="relative h-[85vh] w-[90vw]">
-      <div className="inset-0 absolute bg-transparent h-full w-full z-20 border-4 border-blue-100 shadow-[0_0_10px_5px_rgba(59,130,246,0.7)]"></div>
-      <div className="top-[2vh] bottom-[2vh] h-full w-full homepageContents inset-0 absolute flex flex-col justify-around items-center z-10">
-        <h1 className="cursor-pointer">The System</h1>
-        <div className="tasks w-full flex justify-evenly items-center">
+    <div className="homePage bg-black h-[85%] w-[90%] rounded flex flex-col justify-around">
+      <div className="title flex items-center justify-center w-[100%]">
+        <h1 className="text-[1.5rem]">The-System</h1>
+        <br></br>
+      </div>
+      <div className="homepageContent flex flex-col items-center justify-around h-[80%]">
+        <div className="tasks flex items-center justify-around">
           <img
-            src="/assets/placeholder.png"
+            src="assets/placeholder.png"
             alt=""
-            className="h-[90px] w-[90px]  cursor-pointer rounded"
+            className="aspect-square w-[25%] rounded"
           />
           <img
-            src="/assets/placeholder.png"
+            src="assets/placeholder.png"
             alt=""
-            className="h-[90px] w-[90px] cursor-pointer rounded"
+            className="aspect-square w-[25%] rounded"
           />
           <img
-            src="/assets/placeholder.png "
+            src="assets/placeholder.png"
             alt=""
-            className="h-[90px] w-[90px] cursor-pointer rounded"
-            onClick={() => console.log("Clicked!")}
+            className="aspect-square w-[25%] rounded"
           />
         </div>
         <UserStats />
+        <div className="message w-[80%]">
+          <h1 className="text-center">Quote of the Day</h1>
+          <br></br>
+          <p className="text-center">
+            All dreams are within reach. All you have to do is keep moving
+            towards them
+          </p>
+        </div>
       </div>
-      <img className="absolute h-full w-full" src="/assets/bg.png" alt="bg" />
     </div>
   );
 }

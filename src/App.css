@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: white;
   font-family: "Courier New", Courier, monospace;
+  overflow: hidden;
 }
 
 html,
